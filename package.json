@@ -12,10 +12,10 @@
     "url": "git+https://github.com/Andruha0013/FilmotekaVNull.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Andrii <andruha0013@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://Andruha0013.github.io/FilmotekaVNull/issues"
   },
   "dependencies": {
     "axios": "^1.2.2",
