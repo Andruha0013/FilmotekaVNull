@@ -55,7 +55,7 @@ export function fetchMovieList() {
       });
       spinnerOff();
       createMovieCards(results);
-      createPagination(fetchMovieList, newApiService, total_results);
+      //createPagination(fetchMovieList, newApiService, total_results);
     });
   });
 }
