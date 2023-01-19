@@ -52,7 +52,7 @@ async function searchHandler(e) {
       }
     });*/
     //console.log(data.results);
-    await createMovieCards(data.results);
+    createMovieCards(data.results);
     spinnerOff();
     //createPagination(a.fetchSearchArticlesPages, a, a.total_results);
   }
