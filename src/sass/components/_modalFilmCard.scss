@@ -1,0 +1,320 @@
+
+.basicLightbox--visible {
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-cardFilm {
+    position: relative;
+
+    background-color: #ffffff;
+    width: 280px;
+    margin-top: 350px;
+  }
+}
+
+.genres {
+  display: flex;
+}
+
+.image {
+  display: block;
+  width: 240px;
+  border-radius: 5px;
+}
+.cardFilm__image{
+  padding-right: 20px;
+  margin-left: 20px;
+  padding-top: 48px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .image{
+  width: 264px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cardFilm__image{
+  margin-top: 40px;
+  margin-left: 36px;
+  margin-bottom: 40px;
+  padding: 0;
+}
+}
+@media screen and (min-width: 1200px) {
+  .image {
+    width: 375px;
+    
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cardFilm__image {
+  margin-bottom: 40px;
+  margin-left: 16px;
+  margin-top: 40px;
+  padding: 0;
+  }
+}
+.cardFilm__wrapper {
+  padding: 20px 20px 40px;
+}
+
+.cardFilm__name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px){
+  .cardFilm__name {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.17;
+  }
+}
+
+
+
+
+.cardFilm__text{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.333;
+  color: #8c8c8c;
+  margin-bottom: 8px;
+}
+
+.title__wrapper{
+  display: flex;
+  // justify-content: flex-start;
+}
+.cardFilm__text {
+  color: #8d8d8d;
+  display: flex;
+  align-items: center;
+}
+
+
+.cardFilm__vote_average {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 3px;
+  background-color: rgb(255, 107, 8);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  padding: 1px 9px 1px 10px;
+}
+
+.cardFilm__vote_count {
+  display: inline-block;
+  margin-left: 3px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 1px 4px 1px 4px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.cardFilm___data {
+  margin-left: 63px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.cardFilm__title_data {
+  margin-left: 75px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+@media screen and (min-width: 768px){
+  .cardFilm__title_data{
+    margin-left: 75px;
+  }
+}
+
+.cardFilm__genre {
+  display: inline-block;
+  margin-right: 85px;
+  @media screen and (min-width: 767px)  {
+    margin-right: 90px;
+  }
+}
+
+// .cardItem__genre_data {
+//   color: rgb(0, 0, 0);
+//   margin-right: 5px;
+// }
+
+.cardFilm__genreList {
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+
+  color:black;
+}
+
+@media screen and (min-width: 768px){
+  .cardFilm__genre{
+    margin-right: 85px;
+  }
+}
+.cardFilm__about {
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+
+  color: rgb(0, 0, 0);
+
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.cardFilm__description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: rgb(0, 0, 0);
+}
+
+.cardFilm__listButton {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
+  
+}
+
+@media screen and (min-width: 1199px) {
+  .cardFilm__listButton {
+    justify-content: flex-start;
+    text-align: center;
+  }
+}
+
+#watched{
+  margin-right: 20px;
+}
+.cardFilm__button {
+  padding: 0 15px;
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: center;
+  height: 55px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 134px;
+}
+@media screen and (min-width: 768px){
+  .cardFilm__button{
+    height: 44px;
+  }
+}
+
+#watched:focus ,
+#watched:hover {
+  background-color: #ff6b01;
+  border: none;
+  color:white;
+}
+#queue:focus ,
+#queue:hover {
+  background-color: #ff6b01;
+  border: none;
+  color:white;
+}
+
+
+
+.cardItem__list {
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-cardFilm {
+    background-color: #ffffff;
+    width: 704px;
+    margin-top: 0px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .modal-cardFilm {
+    background-color: #ffffff;
+    width: 806px;
+    margin-top: 0px;
+    display: flex;
+  }
+}
+
+
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+  .cardFilm__wrapper {
+    width: 375px;
+    padding-left: 68px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 29px;
+}}
+
+@media screen and (min-width: 1200px){
+  .cardFilm__wrapper {
+    width: 806px;
+    // padding: 0;
+    padding: 40px 12px 40px 16px;
+  }
+}
+
+.modal-close-btn{
+  position: absolute;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: var(--background-second-color);
+  border: none;
+  box-sizing: border-box;
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: white;
+  font-size: larger;
+}
+@media screen and (min-width: 1199px) {
+  .modal-close-btn {
+    top: 12px;
+  }
+}
+ 
+
+

@@ -1,0 +1,61 @@
+
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        rel="stylesheet">
+    
+</head>
+
+    <header class="container--header">
+        <nav>
+            <a class="logo link" href="./index.html">
+            <svg widht="27px" height="27px"  viewBox="0 0 100 100" aria-label="Logo" class="icon-logo">
+                <use href="/src/images/sprite.svg#icon-film"></use>
+            </svg><span class="logo--name">Filmoteka</span></a>
+            <ul class="site-nav site-nav--main list">
+                 <li class="auth-nav__item">
+                   <li class="auth-nav__item">
+                    <button class="auth-btn login__btn" type="button">
+                        <img class="log-in" src="/src/images/log-in/log-in-8-32.png" alt="Log in" width="25" height="25" />
+                       
+                    </button>
+                  </li>
+                                
+                  </li class="auth-nav__item">
+                  <button class="auth-btn logout__btn" type="button">
+                      <img class="log-in" src="/src/images/log-in/log-out-20-16.png" alt="Log out" width="25" height="25" />
+                   
+                </button>
+                 
+                  </li>
+                <!-- <li class="auth-nav__item">
+                    <button class="auth-btn login__btn" type="button">Log in</button>
+                  </li>
+                  <li class="auth-nav__item">
+                    <button class="auth-btn logout__btn" type="button">Log out</button>
+                  </li> -->
+                <li class="site-nav__item site-nav__item--main"><a
+                        class="site-nav__link site-nav__link--main site-nav__link--current link"
+                        href="/src/index.html">Home</a></li>
+                <li class="site-nav__item site-nav__item--main"><a id="library-link" class="site-nav__link site-nav__link--main  link"
+                        href="/src/library.html">Library</a></li>
+            </ul>
+        </nav>
+        <div class="form-search__icon">
+          <form id="myForm">
+                    <input type="search" id="name-input" class="form-search__input" placeholder="Movie search">
+    
+                <span class="form-search__icon_icon"><svg widht="8px" height="8px" viewBox="0 0 100 100" aria-label="Search">
+                    <use class="icon-search" href="/src/images/sprite.svg#icon-search-2"></use>
+                </svg></span>
+              </form>
+                </div>
+        
+    </header>
