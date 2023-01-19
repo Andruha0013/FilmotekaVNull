@@ -57,6 +57,7 @@ export function fetchMovieList() {
       createMovieCards(results);
       createPagination(fetchMovieList, newApiService, total_results);
     }
+    spinnerOff();
     });
   });
 }

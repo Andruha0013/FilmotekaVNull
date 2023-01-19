@@ -16,10 +16,7 @@ export default class ApiData{
         spinnerOn();
         var res;
         if(id!==null&&id!==undefined){
-            await this.getData(`${this.defURL}/${this.mediaType}/${id}?api_key=${this.defKEY}&language=en-US`).then(result=>{
-                //console.log(result);
-                res=result;
-            });
+            res = await this.getData(`${this.defURL}/${this.mediaType}/${id}?api_key=${this.defKEY}&language=en-US`)
         }
         else{
             console.log(`ERROR id=${id}`);
