@@ -24,7 +24,7 @@ function openModal(e){
     if(idFilm!==null&&idFilm!==""){
             movie.getByID(idFilm)
         .then((result) => {
-            //console.log(result);
+            console.log(result);
             let watchedBtnStatus={
                 status: "add",
                 text:   "Add to watched",
