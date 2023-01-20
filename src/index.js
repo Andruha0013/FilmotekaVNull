@@ -11,5 +11,5 @@ import './js/myLibrary';
 import './js/keyWordSearch';
 import 'regenerator-runtime/runtime.js';
 import './js/trailers';
-//import './js/btn-upp';
+import './js/btn-upp';
 import './js/slider';
