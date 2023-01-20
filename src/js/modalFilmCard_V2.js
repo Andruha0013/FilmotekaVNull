@@ -60,7 +60,12 @@ if(refs.gallery!==null){
                         watchedBtnStatus.status="remove";
                         watchedBtnStatus.text="Remove from watched";
                     }
-
+                    if(result.poster_path==null){
+                        result.poster_path=new URL("../images/library/imagesDef.jpg",import.meta.url);
+                    }
+                    else{
+                        result.poster_path=`https://image.tmdb.org/t/p/original${result.poster_path}`
+                    }
                     let markupOneCard = `<div class="modal-cardFilm" id='${result.id}'>
                     <div class="cardFilm__image">
                     <img class="image" width="320" src="https://image.tmdb.org/t/p/original${result.poster_path}" alt="${result.original_title}"/>
