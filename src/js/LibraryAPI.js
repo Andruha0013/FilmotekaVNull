@@ -1,5 +1,6 @@
 import { load, save, remove } from "./localStorageApi";
 export default class LibraryStorage{
+
     constructor(storageKey){
         this.key=storageKey;
         this.storage="";

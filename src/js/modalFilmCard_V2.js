@@ -173,7 +173,7 @@ if(refs.gallery!==null){
             //---------END---buttons functions--------------------------------  
                 })
                 .catch(error => {
-                console.error()})
+                console.log(error);});
             }
             else{
                 //spinnerOff();
@@ -202,12 +202,7 @@ if(refs.gallery!==null){
 
 function reRender(flag,tab,movieObjMass){
     const btn=document.querySelector(`#${tab}`);
-    let tStatus="no";
-    if(btn!==null){
-        tStatus=btn.value;
-    }
-    console.log(`tabStatus=${tStatus}`);
-    console.log(`flag=${flag}`);
+
     if(flag==true && tab===refs.tabsID.current){ 
         document.querySelector(`#${refs.libraryPageID}`).innerHTML=renderCardV2(movieObjMass);
     }

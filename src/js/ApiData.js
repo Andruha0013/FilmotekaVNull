@@ -15,7 +15,12 @@ export default class ApiData{
         console.log(id);
         spinnerOn();
         if(id!==null&&id!==undefined){
-            return await this.getData(`${this.defURL}/${this.mediaType}/${id}?api_key=${this.defKEY}&language=en-US`);
+            try{
+                return await this.getData(`${this.defURL}/${this.mediaType}/${id}?api_key=${this.defKEY}&language=en-US`);
+            }
+            catch(e){
+                return {error: e, message: "getData Error",};
+            }
         }
         else{
             console.log(`ERROR id=${id}`);
@@ -42,11 +47,11 @@ export default class ApiData{
         .then(function (response) {
             // обробка успішного запиту
             //console.log(response.data);
-            result=response.data;
+            result = response.data;
         })
         .catch(function (error) {
             // обробка помилки
-            result={
+            return {
                 data:null,
                 status:'error',//помилка виконанння
                 error:error,
@@ -55,6 +60,7 @@ export default class ApiData{
         .then(function () {
             // виконується завжди
         }); 
+        console.log(result);
         return result;
     }
     //-------------------------------------------------------------------------------------------------
