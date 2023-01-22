@@ -8,7 +8,6 @@ const refs = {
   myForm: document.querySelector("#myForm"),
   moviesOnInputList: document.querySelector('.gallery'),
   inputEl: document.querySelector('#name-input'),
-  totalPages: 0,
 };
 if(refs.inputEl!==null){
 
@@ -33,7 +32,6 @@ if(refs.inputEl!==null){
       return;
     } else {
       //console.log(data.results);
-      refs.totalPages=data.total_results;
       const genre = await a.fetchGenres().then(( genres ) => {
         
         console.log(genres);
